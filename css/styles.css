@@ -228,15 +228,15 @@ Navbar
 .show-links {
   height: 280px;
 }
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
   /* hide toggle button */
   .navbar {
     padding: 1rem 2rem;
   }
-  .nav-toggle{
+  .nav-toggle {
     display: none;
   }
-  .nav-center{
+  .nav-center {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -253,11 +253,11 @@ Navbar
   .nav-link {
     padding: 0 0;
     margin-right: 0.7rem;
-
   }
   .nav-link:hover {
     padding: 0;
     color: var(--clr-primary-5);
+    background: transparent;
   }
   .nav-icons {
     display: flex;
@@ -268,12 +268,10 @@ Navbar
     font-size: 1.2rem;
     transition: var(--transition);
   }
-  .nav-icon:hover{
+  .nav-icon:hover {
     color: var(--clr-primary-8);
   }
-
 }
-
 /*
 =============== 
 Hero
@@ -446,7 +444,7 @@ Featured Tours
 .tour-img {
   height: 15rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .tour-date {
   position: absolute;
@@ -457,7 +455,6 @@ Featured Tours
   color: var(--clr-primary-1);
   text-transform: capitalize;
   padding: 0.25rem 0.5rem;
-  font-size: 1rem;
 }
 .tour-info {
   padding: 1.25rem 1.5rem;
@@ -471,25 +468,22 @@ Featured Tours
 .tour-title p,
 .tour-title h4 {
   margin-bottom: 0.75rem;
-  line-height: 1.25rem;
+  line-height: 1.25;
+}
+.tour-title p {
+  color: var(--clr-grey-7);
 }
 .tour-footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background: var(--clr-primary-8);
-  padding: 0.5rem;
-  font-size: 1.2rem;
-}
-.fa-map {
-  padding-right: 0.5rem;
 }
 .tour-footer p {
   line-height: 0;
   margin-bottom: 0;
   text-transform: capitalize;
-  color: var(--clr-primary-1);
+  color: var(--clr-primary-5);
 }
 .tour-btn {
   text-align: center;
@@ -504,13 +498,11 @@ Featured Tours
     flex: 0 0 calc(50% - 2rem);
   }
 }
-
 @media screen and (min-width: 1170px) {
   .tour-card {
     flex: 0 0 calc(33.333% - 2rem);
   }
 }
-
 /*
 =============== 
 Contact
@@ -523,7 +515,7 @@ Contact
   color: var(--clr-white);
 }
 .contact-title p {
-  color: var(--clr-primary-9);
+  color: var(--clr-primary-8);
 }
 .contact-form {
   display: flex;
@@ -535,9 +527,9 @@ Contact
 }
 .form-control,
 .btn-submit {
-  padding: 0.375rem 0.7rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
   font-weight: 300;
   letter-spacing: var(--spacing);
   background: var(--clr-white);
@@ -569,7 +561,7 @@ Contact
 }
 .btn-submit:hover {
   background: var(--clr-primary-1);
-  color: var(--clr-primary-8);
+  color: var(--clr-primary-5);
 }
 @media screen and (min-width: 992px) {
   .contact-center {
@@ -607,11 +599,11 @@ Gallery
 .gallery-img {
   height: 17rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: var(--transition);
 }
 .gallery-img-container:hover .gallery-img {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .gallery-img-container:hover .gallery-icon {
   opacity: 1;
@@ -630,7 +622,6 @@ Gallery
     flex: 0 0 25%;
   }
 }
-
 /*
 =============== 
 Footer
@@ -642,7 +633,6 @@ Footer
   padding-left: 2rem;
   padding-right: 2rem;
 }
-
 .footer-links,
 .footer-icons {
   display: flex;
@@ -660,7 +650,6 @@ Footer
 }
 .footer-link:hover {
   color: var(--clr-primary-5);
-  /* cursor: pointer; */
 }
 .footer-icon {
   font-size: 2rem;
@@ -669,7 +658,7 @@ Footer
   transition: var(--transition);
 }
 .footer-icon:hover {
-  color: var(--clr-primary-4);
+  color: var(--clr-primary-5);
 }
 .copyright {
   text-transform: capitalize;
